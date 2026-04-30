@@ -1,8 +1,8 @@
 # Grupa12-TPTP-2026
 
-# [Naziv tvog projekta]
+# [Naziv]
 
-# Tema: Web stranica kompanije za dizajn enterijera (portfolio usluga i projekata)  
+# Tema: Web stranica kompanije za dizajn enterijera   
 
 Ovo je projekat rađen za predmet Tehnologije za podršku tehničkom pisanju (TPTP). Web stranica predstavlja kompaniju za dizajn enterijera pod nazivom      .
 Cilj projekta je prikaz usluga, projekata i načina rada firme kroz modernu i responzivnu web stranicu. Korisnici mogu pregledati različite tipove enterijera, filtrirati projekte, pogledati detalje, te putem kontakt forme poslati upit.
