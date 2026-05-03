@@ -12,5 +12,5 @@ Aplikacija je izrađena koristeći HTML, CSS i JavaScript, bez korištenja dodat
 ##  Članovi tima
 
 * **Amina Imamović** - *GitHub username: AminaImamovic * 
-* **Amina Ibrahimović** - *GitHub username: * 
-* **Amina Fazlić** - *GitHub username: * 
+* **Amina Ibrahimović** - *GitHub username: aminaibrahimovic * 
+* **Amina Fazlić** - *GitHub username: aminafazlic20  * 
