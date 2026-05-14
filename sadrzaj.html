@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumina Interior Design | Početna</title>
+    <title>Lumina Interior Design | Projekat A101</title>
     <link rel="stylesheet" href="css/tptpstil.css">
 </head>
 
-<body>
+<body id="vrh">
     <header>
       <div class="logo">
         LUMINA <span>INTERIOR DESIGN</span>
@@ -23,32 +23,42 @@
         </ul>
       </nav>
         <ul>
-            <li><button id="dark-mode-toggle">🌙</button></li>
+            <li><button id="dark-mode-toggle" aria-label="Prebaci u tamni režim">🌙</button></li>
             <li><a href="https://github.com/AminaImamovic/Grupa12-TPTP-2026" target="_blank">GitHub</a></li>
          </ul>
     </header>
 
-    <div class="left">
+    <nav class="lijevo">
         <h3>Sadržaj stranice</h3>
         <ul>
-            <li>O projektu</li>
-            <li>Specifikacije</li>
-            <li>Galerija</li>
-            <li>Tlocrt</li>
-            <li>Kategorije</li>
-            <li>Skoči na vrh</li>
+            <li><a href="#o-projektu">O projektu</a></li>
+            <li><a href="#specifikacije">Specifikacije</a></li>
+            <li><a href="#galerija">Galerija</a></li>
+            <li><a href="#tlocrt">Tlocrt</a></li>
+            <li><a href="#kategorije">Kategorije</a></li>
+            <li><a href="#cilj-projekta">Cilj projekta</a></li>
+            <li><a href="#vrh">Skoči na vrh</a></li>
         </ul>
-    </div>
-    <div class="project">
+    </nav>
+
+    <main>
+    <article id="o-projektu">
         <h2>MODERAN STAN - PROJEKAT A101</h2>
         <p>Projekat modernog stana od 85m² u centru grada. Fokus na otvorenom prostoru, prirodnim materijalima i neutralnim tonovima sa zlatnim detaljima.</p>
-        <table>
+    </article>
+
+    <section id="specifikacije">
+        <h3>SPECIFIKACIJE</h3>
+        <table border="1">
+          <thead>
             <tr>
                 <th>Prostorija</th>
                 <th>Površina (m²)</th>
                 <th>Materijali</th>
                 <th>Vrijeme izrade</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>Dnevni boravak</td>
                 <td>22</td>
@@ -85,47 +95,93 @@
                 <td>Parket, MDF</td>
                 <td>1.5 sedmica</td>
             </tr>
+            </tbody>
         </table>
+    </section>
 
-        <h3>Galerija</h3>
-        <div class="gallery">   
+    <section id="galerija">
+        <h3>GALERIJA</h3>
+        <div class="gallery">  
+          <picture> 
+            <source srcset="images/dnevni_boravak.webp" type="image/webp">
             <img src="images/dnevni_boravak.jpg" alt="Dnevni boravak">
+          </picture>
             <img src="images/kuhinja.jpg" alt="Kuhinja">
             <img src="images/spavaca_soba.jpg" alt="Spavaća soba">
             <img src="images/kupatilo.jpg" alt="Kupatilo">
             <img src="images/hodnik.jpg" alt="Hodnik">
             <img src="images/radna_soba.jpg" alt="Radna soba"> 
         </div>
+    </section>
 
-    <h3>Kategorije i usluge</h3>
+    <section id="tlocrt">
+        <h3>TLOCRT STANA</h3>
+        <img src="images/tlocrt.jpg" usemap="#stanmap" alt="Tlocrt stana A101">
+        
+        <map name="stanmap">
+        <area shape="circle" coords="310,366,20" href="#specifikacije" alt="Dnevni boravak">
+        <area shape="circle" coords="560,286,20" href="#specifikacije" alt="Kuhinja">
+        <area shape="circle" coords="257,736,20" href="#specifikacije" alt="Spavaća soba">
+        <area shape="circle" coords="607,563,20" href="#specifikacije" alt="Kupatilo">
+        <area shape="circle" coords="425,586,20" href="#specifikacije" alt="Hodnik">
+        <area shape="circle" coords="640,756,20" href="#specifikacije" alt="Radna soba">
+        </map>
+        <p>Kliknite na brojeve na tlocrtu za detalje o svakoj prostoriji.</p>
+      </section>
+
+    <section id="kategorije">
+    <h3>KATEGORIJE I USLUGE</h3>
     <ul>
-        <li>Dizajn enterijera</li>
+        <li>Dizajn enterijera
         <ul>
             <li>Stanovi</li>
             <li>Kuće</li>
             <li>Komercijalni prostori</li>
         </ul>
-        <li>Usluge</li>
+      </li>
+        <li>Usluge
         <ul>
             <li>3D vizualizacija</li>
             <li>Konsultacije</li>
             <li>Projektovanje</li>            
         </ul>
-        <li>Namještaj po mjeri</li>
+      </li>
+        <li>Namještaj po mjeri
         <ul>
             <li>Kuhinje</li>
             <li>Plakari</li>
             <li>Dnevne sobe</li>
         </ul>
+      </li>
     </ul>     
-    </div>
-    <div class="o_projektu">
+    </section>
+
+    <section id="cilj-projekta">
         <h3>O projektu</h3>
         <p>Cilj projekta bio je stvoriti moderan, funkcionalan i prozračan prostor prilagođen potrebama klijenta. Kombinacijom prirodnih materijala, skrivenog osvjetljenja i neutralnih tonova postigli smo savršen balans estetike i udobnosti.</p>
+    </section>
+    </main>
+
+    <aside class="informacije">
+      <h3>DETALJI PROJEKTA</h3>
+      <ul>
+        <li><strong>ID:</strong> A101-2026</li>
+        <li><strong>Tip:</strong> Stambeni prostor</li>
+        <li><strong>Lokacija:</strong> Tuzla, Centar</li>
+        <li><strong>Vrijeme:</strong> 9 sedmica</li>
+      </ul>
+      <p><i>*Sve specifikacije su rađene prema zahtjevima klijenta.</i></p>
+    </aside>
+
+    <div class="vrh">
+      <a href="#vrh" class="vrh-link">Skoči na vrh</a>
     </div>
 
-    <div clas="tlocrt">
-        <h3>Tlocrt stana</h3>
-    </div>
+    <footer>
+      <p>&copy; 2026 Lumina Design</p>
+    </footer>
+
+    <script src="js/tptpskripte.js"></script>
+
     </body>
 </html>
