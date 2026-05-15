@@ -23,7 +23,7 @@
         </ul>
       </nav>
         <ul>
-            <li><button id="dark-mode-toggle">🌙</button>"</li>
+            <li><button id="dark-mode-toggle">🌙</button></li>
             <li><a href="https://github.com/AminaImamovic/Grupa12-TPTP-2026" target="_blank">GitHub</a></li>
          </ul>
     </header>
@@ -53,8 +53,11 @@
              </p>
          </div>
       <div class="o-nama-slika">
-        <img src="images/o-nama1.jpg" alt="Prvi detalj enteriera">
-        <img src="images/o-nama2.jpg" alt="Drugi detalj enterijera">
+        <img src="images/o-nama1.jpg"  alt="Prvi detalj enteriera" style="width: 300px; height: auto;">
+        <img src="images/o-nama2.jpg"  alt="Drugi detalj enterijera" style="width: 300px; height: auto;"> 
+        <!--Ovaj naćin za smanjivanje slika sam pronašla uz pomoć ChatGPT-a.-->
+        <!--Razumijem da width:300px određuje da će slika biti široka 300 piskela-->
+        <!--height:auto; znači da će visina slike biti automatski prilagođena da bi se spriječilo iskrivljenje slike--> 
       </div>
     </div>
  </section>
@@ -84,4 +87,105 @@
         </div>
       </div>
  </section>
+
+ <section class="projekti">
+
+    <aside class="kategorije">
+        <h3>KATEGORIJE</h3>
+        <ul>
+            <li>Sve</li>
+            <li>Stanovi</li>
+            <li>Kuće</li>
+            <li>Kancelarije</li>
+            <li>Komercijalni prostori</li>
+        </ul>
+
+        <div class="video-sekcija">
+    <h3>INSPIRACIJA</h3>
+    <div class="video">
+        <img src="images/video.jpg" alt="Video inspiracija" width="100%">
+          <!--width="100%" nam govori da se slika raširi tačno koliko je širok aside-->
+        <button type="button" class="play-dugme">PLAY VIDEO</button>
+    </div>
+</div>
+    </aside>
+
+    <main class="projekti">
+        <h2>NAŠI PROJEKTI</h2>
+        
+        <div class="projekti-grid">
+            
+            <div class="projekt-kartica">
+                <img src="images/moderan_stan.jpg" alt="Moderan stan" style="width: 300px; height: auto;">
+                <h4>Moderan stan</h4>
+                <p>Toplina doma u svakom detalju.</p>
+                <button>DETALJI</button>
+            </div>
+
+            <div class="projekt-kartica">
+                <img src="images/kuhinja1.jpg" alt="Kuhinja" style="width: 300px; height: auto;">
+                <h4>Kuhinja</h4>
+                <p>Funkcionalnost i elegancija u savršenom spoju.</p>
+                <button>DETALJI</button>
+            </div>
+
+            <div class="projekt-kartica">
+                <img src="images/spavaca_soba1.jpg" alt="Spavaća soba" style="width: 300px; height: auto;">
+                <h4>Spavaća soba</h4>
+                <p>Prostor za odmor i potpuni mir.</p>
+                <button>DETALJI</button>
+            </div>
+
+            <div class="projekt-kartica">
+                <img src="images/kupatilo1.jpg" alt="Kupatilo" style="width: 300px; height: auto;">
+                <h4>Kupatilo</h4>
+                <p>Moderno, minimalističko i praktično.</p>
+                <button>DETALJI</button>
+            </div>
+
+            <div class="projekt-kartica">
+                <img src="images/kancelarija.jpg" alt="Kancelarija" style="width: 300px; height: auto;">
+                <h4>Kancelarija</h4>
+                <p>Produktivan prostor dizajniran za usojeh.</p>
+                <button>DETALJI</button>
+            </div>
+
+            <div class="projekt-kartica">
+                <img src="images/restoran.jpg" alt="Restoran" style="width: 300px; height: auto;">
+                <h4>Restoran</h4>
+                <p>Ambijent koji ostavlja utisak.</p>
+                <button>DETALJI</button>
+            </div>
+
+        </div>
+    </main>
+
+</section>
+
+<section class="lokacija">
+    
+    <div class="mapa">
+        <div class="prazan-prostor"></div>
+        <!--Razumijem da ovo predstavlja nevidljivi držač mjesta koji u CSS-u služi da mapu automatski pogura i zadrži na desnoj strani ekrana.-->
+
+        <div class="mapa-desno">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.2304950677285!2d18.691574176454015!3d44.53091287107403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ead0411703741%3A0xab3aa8490fc03fff!2sStupine%20B-13!5e0!3m2!1shr!2sba!4v1778803621246!5m2!1shr!2sba"
+             width="600" 
+             height="450" 
+             style="border:0;" 
+             allowfullscreen="" 
+             loading="lazy" 
+             referrerpolicy="no-referrer-when-downgrade">
+             <!--Gemini je pojasnio da mapu pravim tako što kopiram generisani <iframe> kod sa Google Maps-a i zalijepim ga direktno unutar predviđenog div kontejnera na stranici.-->
+
+            </iframe>
+        </div>
+    </div>
+
+</section>
+
+ <footer>
+        <p>Članovi tima: Amina Imamović, Amina Ibrahimović i Amina Fazlić </p>
+      <p>&copy; 2026 Lumina Design. Sva prava zadržana.</p>
+    </footer>
 </body>
