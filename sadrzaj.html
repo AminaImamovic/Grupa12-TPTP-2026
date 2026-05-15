@@ -29,8 +29,9 @@
     </header>
 
     <div class="stranica-sadrzaj">
-    <nav class="lijevo">
+    <aside class="lijevo">
         <h3>Sadržaj stranice</h3>
+        <nav>
         <ul>
             <li><a href="#o-projektu">O projektu</a></li>
             <li><a href="#specifikacije">Specifikacije</a></li>
@@ -40,7 +41,8 @@
             <li><a href="#cilj-projekta">Cilj projekta</a></li>
             <li><a href="#vrh">Skoči na vrh</a></li>
         </ul>
-    </nav>
+        </nav>
+    </aside>
 
     <main class="sredina">
     <article id="o-projektu">
@@ -100,9 +102,10 @@
         </table>
     </section>
 
-    <section id="galerija">
+    <div class="galerija-tlocrt">
+        <section id="galerija">
         <h3>GALERIJA</h3>
-        <div class="gallery">  
+        <div class="galerija">  
           <picture> 
             <source srcset="images/dnevni_boravak.webp" type="image/webp">
             <img src="images/dnevni_boravak.jpg" alt="Dnevni boravak">
@@ -117,18 +120,19 @@
 
     <section id="tlocrt">
         <h3>TLOCRT STANA</h3>
-        <img src="images/tlocrt.jpg" usemap="#stanmap" alt="Tlocrt stana A101">
+        <img src="images/tlocrt.jpg" usemap="#stanmap" alt="Tlocrt stana A101"> <!--Slika geenerisana putem AI-->
         
         <map name="stanmap">
-        <area shape="circle" coords="310,366,20" href="#specifikacije" alt="Dnevni boravak">
-        <area shape="circle" coords="560,286,20" href="#specifikacije" alt="Kuhinja">
-        <area shape="circle" coords="257,736,20" href="#specifikacije" alt="Spavaća soba">
-        <area shape="circle" coords="607,563,20" href="#specifikacije" alt="Kupatilo">
-        <area shape="circle" coords="425,586,20" href="#specifikacije" alt="Hodnik">
-        <area shape="circle" coords="640,756,20" href="#specifikacije" alt="Radna soba">
+            <area shape="circle" coords="105,135,25" href="#specifikacije" alt="Dnevni boravak">
+            <area shape="circle" coords="198,110,25" href="#specifikacije" alt="Kuhinja">
+            <area shape="circle" coords="66,260,25" href="#specifikacije" alt="Spavaća soba">
+            <area shape="circle" coords="237,200,25" href="#specifikacije" alt="Kupatilo">
+            <area shape="circle" coords="152,213,25" href="#specifikacije" alt="Hodnik">
+            <area shape="circle" coords="240,271,25" href="#specifikacije" alt="Radna soba">
         </map>
         <p>Kliknite na brojeve na tlocrtu za detalje o svakoj prostoriji.</p>
       </section>
+    </div>
 
     <section id="kategorije">
     <h3>KATEGORIJE I USLUGE</h3>
@@ -165,22 +169,10 @@
       <a href="#vrh" class="vrh-link">Skoči na vrh</a>
     </div>
     </main>
-    <div class="desno">
-    <aside class="informacije">
-      <h3>DETALJI PROJEKTA</h3>
-      <ul>
-        <li><strong>ID:</strong> A101-2026</li>
-        <li><strong>Tip:</strong> Stambeni prostor</li>
-        <li><strong>Lokacija:</strong> Tuzla, Centar</li>
-        <li><strong>Vrijeme:</strong> 9 sedmica</li>
-      </ul>
-      <p><i>*Sve specifikacije su rađene prema zahtjevima klijenta.</i></p>
-    </aside>
-
-    </div>
     </div>
 
     <footer>
+        <p>Članovi tima: Amina Imamović, Amina Ibrahimović i Amina Fazlić </p>
       <p>&copy; 2026 Lumina Design. Sva prava zadržana.</p>
     </footer>
 
