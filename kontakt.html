@@ -35,25 +35,26 @@
        Popunite kontakt formu koj se nalazi u nastavku:</p>
       </section>
 
-      <div>
-      <picture> <!--AI alat Gemini sugerisao da u folder img stavim .jpg i .webp formate slike kako bi oba pravilno radila-->
-    <source srcset="images/office-view.webp" type="image/webp">
-    <img src="images/office-view.jpg" alt="Naš moderno dizajnirani ured u Tuzli">
+      <figure>
+      <picture> <!--AI alat Gemini sugerisao da dodam i .webp format slike a nakon predavanja dodala sam i .avif format-->
+      <source srcset="images/ured.avif" type="image/avif">
+      <source srcset="images/ured.webp" type="image/webp">
+      <img src="images/ured.jpg" alt="Naš moderno dizajnirani ured u Tuzli">
       </picture>
-      </div>
+      </figure>
 
       <section> <!--IME-->
        <form id="kontakt-forma">
         <div class="polje">
         <label for="ime">Ime:</label>
-        <input type="text" id="ime" name="ime">
+        <input type="text" id="ime" name="ime" required>
         <span class="greška" id="ime-greska"></span>
         </div>
 
              <!--PREZIME-->
         <div class="polje">
         <label for="prezime">Prezime:</label>
-        <input type="text" id="prezime" name="prezime">
+        <input type="text" id="prezime" name="prezime" required>
         <span class="greška" id="prezime-greska"></span>
         </div>
             <!--BR TEL-->
@@ -65,13 +66,13 @@
                 <!--E-MAIL-->
         <div class="polje">
         <label for="e-mail">E-mail:</label>
-        <input type="email" id="e-mail" name="e-mail">
+        <input type="email" id="e-mail" name="e-mail" required>
         <span class="greška" id="e-mail-greska"></span>
         </div>
               <!--MENU-->
         <div class="polje">
         <label for="upit-o">Upit o:</label>
-        <select id="upit-o" name="upit-o">
+        <select id="upit-o" name="upit-o" required>
          <option value="">Odaberite opciju</option>
          <option value="usluge">Vrste i cijene usluga</option>
          <option value="konsultacije">Besplatne konsultacije</option>
@@ -82,7 +83,7 @@
           <!--PORUKA KORISNIKA-->
         <div class="polje">
         <label for="poruka">Vaša poruka:</label>
-        <textarea id="poruka" name="poruka" rows="8"></textarea>
+        <textarea id="poruka" name="poruka" required rows="8"></textarea>
         <span class="greška" id="poruka-greska"></span>
         </div>
         <!--DUGMAD-->
