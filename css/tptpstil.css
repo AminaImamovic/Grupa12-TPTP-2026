@@ -1,0 +1,203 @@
+/* =========ZAJEDNICKO ZA SVE STRANICE==============*/
+:root {
+    /*Boje za tekst i pozadinu*/
+    --glavna-boja: #8b6e4b;
+    --tekst-boja: #333333;
+    --pozadina-boja: #ffffff;
+    --svijetla-boja: #f8f4ec;
+
+    /*Fontovi i razmaci*/
+    --glavni-font: 'Segoe UI', Tahoma, sans-serif;
+    --razmak: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--glavni-font);
+    background-color: var(--pozadina-boja);
+    color: var(--tekst-boja);
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--svijetla-boja);
+    border-bottom: 1px solid #a39e9e;
+}
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.main-nav a {
+    text-decoration: none;
+    color: var(--tekst-boja);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.main-nav a:hover {
+    color: var(--glavna-boja);
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--glavna-boja);
+}
+
+.logo span {
+    font-size: 12px;
+    display: block;
+    color: var(--glavna-boja);
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+header>ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    align-items: center;
+}
+header>ul a {
+    text-decoration: none;
+    color: var(--tekst-boja);
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+header>ul a:hover {
+    color: var(--glavna-boja);
+}
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/*=================STRANICA SADRŽAJ===================*/
+
+.stranica-sadrzaj {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    min-height: 100vh;
+}
+.lijevo {
+    flex: 0 0 250px;
+    background-color: var(--svijetla-boja);
+    padding: 20px;
+    border-radius: 8px;
+    border-right: 1px solid #a39e9e;
+}
+.sredina {
+    flex: 1;
+    padding: 40px 5%;
+    background-color: var(--pozadina-boja);
+}
+.sredina section, .sredina article{
+    margin-bottom: 60px;
+}
+.sredina h2{
+    color: var(--tekst-boja);
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.sredina h3{
+    color: var(--tekst-boja);
+    font-size: 20px;
+    border-bottom: 2px solid var(--svijetla-boja);
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: var(--svijetla-boja);
+    table-layout: fixed;
+}
+th, td {
+    border: 1px solid #3b302380;
+    padding: 5px;
+    text-align: center;
+}
+
+.desno{
+    flex: 0 0 280px;
+    background-color: var(--svijetla-boja);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 1px solid #a39e9e;
+    border-radius: 8px;
+
+}
+.desno h3{
+    color: var(--glavna-boja);
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.desno ul{
+    list-style: none;
+    padding: 0;
+}
+.desno ul li{
+    font-size: 15px;
+    color: var(--tekst-boja);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+.desno ul li strong {
+    color: var(--glavna-boja);
+    font-weight: 600;
+}
+.desno p{
+    font-size: 13px;
+    font-style: italic;
+    color: #666;
+    margin-top: 15px;
+    border-top: 1px solid #070707;
+    padding-top: 10px;
+}
+.lijevo {
+    background-color: var(--svijetla-boja);
+    padding: 20px;
+    border-radius: 8px;
+}
+.lijevo h3 {
+    color: var(--glavna-boja);
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.lijevo ul {
+    list-style: none;
+}
+.lijevo a {
+    text-decoration: none;
+    color: var(--tekst-boja);
+    display: block;
+    padding: 6px 0;
+    transition: 0.3s ease;
+}
+.lijevo a:hover {
+    color: var(--glavna-boja);
+    padding-left: 10px;
+}
+
+
+/*===============STRANICA INDEX===========*/
+/*===============STRANICA KONTAKT=========*/
