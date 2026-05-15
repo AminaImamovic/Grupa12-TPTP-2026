@@ -34,7 +34,7 @@
 
         <p>Kombinujemo estetiku, funkcionalnost i vaše želje kako bismo stvorili savršen enterijer za vas.</p>
 
-        <a href="#projekti" class="btn-hero">Pogledajte naše projekte</a>
+        <a href="#naši_projekti" class="btn-hero">Pogledajte naše projekte</a>
     </div>
  </section>
 
@@ -55,9 +55,9 @@
       <div class="o-nama-slika">
         <picture>
           <source srcset="images/o-nama1.webp" type="image/webp">
-          <img src="images/o-nama1.jpg" alt="Prvi detalj enterijera" style="width: 300px; height: auto;" >
+          <img src="images/o-nama1.jpg" alt="Prvi detalj enterijera" loading="lazy">
       </picture>
-        <img src="images/o-nama2.jpg"  alt="Drugi detalj enterijera" style="width: 300px; height: auto;" > 
+        <img src="images/o-nama2.jpg"  alt="Drugi detalj enterijera" loading="lazy"> 
       </div>
     </div>
  </section>
@@ -88,7 +88,7 @@
       </div>
  </section>
 
- <section class="projekti">
+ <section class="projekti" id="naši_projekti">
 
     <aside class="kategorije">
         <h3>KATEGORIJE</h3>
@@ -103,7 +103,7 @@
         <div class="video-sekcija">
     <h3>INSPIRACIJA</h3>
     <div class="video">
-        <img src="images/video.jpg" alt="Video inspiracija" width="100%">
+        <img src="images/video.jpg" alt="Video inspiracija" loading="lazy">
           <!--width="100%" nam govori da se slika raširi tačno koliko je širok aside-->
         <button type="button" class="play-dugme">PLAY VIDEO</button>
     </div>
@@ -116,58 +116,52 @@
         <div class="projekti-grid">
             
             <div class="projekt-kartica">
-                <img src="images/moderan_stan.jpg" alt="Moderan stan" style="width: 300px; height: auto;">
+                <img src="images/moderan_stan.jpg" alt="Moderan stan" loading="lazy">
                 <h4>Moderan stan</h4>
                 <p>Toplina doma u svakom detalju.</p>
-                <button>DETALJI</button>
+                <a href="sadrzaj.html" class="detalji-dugme">Detalji</a>
             </div>
 
             <div class="projekt-kartica">
-                <img src="images/kuhinja1.jpg" alt="Kuhinja" style="width: 300px; height: auto;">
+                <img src="images/kuhinja1.jpg" alt="Kuhinja" loading="lazy">
                 <h4>Kuhinja</h4>
                 <p>Funkcionalnost i elegancija u savršenom spoju.</p>
-                <button>DETALJI</button>
+                <a href="sadrzaj.html" class="detalji-dugme">Detalji</a>
             </div>
 
             <div class="projekt-kartica">
-                <img src="images/spavaca_soba1.jpg" alt="Spavaća soba" style="width: 300px; height: auto;">
+                <img src="images/spavaca_soba1.jpg" alt="Spavaća soba" loading="lazy">
                 <h4>Spavaća soba</h4>
                 <p>Prostor za odmor i potpuni mir.</p>
-                <button>DETALJI</button>
+                <a href="sadrzaj.html" class="detalji-dugme">Detalji</a>
             </div>
 
             <div class="projekt-kartica">
-                <img src="images/kupatilo1.jpg" alt="Kupatilo" style="width: 300px; height: auto;">
+                <img src="images/kupatilo1.jpg" alt="Kupatilo" loading="lazy">
                 <h4>Kupatilo</h4>
                 <p>Moderno, minimalističko i praktično.</p>
-                <button>DETALJI</button>
+                <a href="sadrzaj.html" class="detalji-dugme">Detalji</a>
             </div>
 
             <div class="projekt-kartica">
-                <img src="images/kancelarija.jpg" alt="Kancelarija" style="width: 300px; height: auto;">
+                <img src="images/kancelarija.jpg" alt="Kancelarija" loading="lazy">
                 <h4>Kancelarija</h4>
                 <p>Produktivan prostor dizajniran za usojeh.</p>
-                <button>DETALJI</button>
+                <a href="sadrzaj.html" class="detalji-dugme">Detalji</a>
             </div>
 
             <div class="projekt-kartica">
-                <img src="images/restoran.jpg" alt="Restoran" style="width: 300px; height: auto;">
+                <img src="images/restoran.jpg" alt="Restoran" loading="lazy">
                 <h4>Restoran</h4>
                 <p>Ambijent koji ostavlja utisak.</p>
-                <button>DETALJI</button>
+                <a href="sadrzaj.html" class="detalji-dugme">Detalji</a>
             </div>
 
         </div>
     </main>
 
-</section>
-
-<section class="lokacija">
-    
-    <div class="mapa">
-        <div class="prazan-prostor"></div>
-        <!--Razumijem da ovo predstavlja nevidljivi držač mjesta koji u CSS-u služi da mapu automatski pogura i zadrži na desnoj strani ekrana.-->
-
+<aside class="lokacija">
+        <h3>LOKACIJA</h3>
         <div class="mapa-desno">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.2304950677285!2d18.691574176454015!3d44.53091287107403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ead0411703741%3A0xab3aa8490fc03fff!2sStupine%20B-13!5e0!3m2!1shr!2sba!4v1778803621246!5m2!1shr!2sba"
              width="600" 
@@ -180,8 +174,14 @@
 
             </iframe>
         </div>
-    </div>
-
+     <div class="kontakt-info">
+        <p><strong>Lumina Interior Design</strong></p>
+        <p>Tuzla, BiH</p>
+        <p><strong>Radno vrijeme:</strong></p>
+        <p>Pon - Pet: 9:00 - 18:00</p>
+        <p>Sub: 9:00 - 14:00</p>
+     </div>
+</aside>
 </section>
 
  <footer>

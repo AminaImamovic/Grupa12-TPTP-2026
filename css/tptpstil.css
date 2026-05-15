@@ -83,6 +83,30 @@ header>ul a:hover {
     font-size: 1rem;
 }
 
+footer {
+    background-color: #d7c4b7; 
+    color: #4b3832;            
+    padding: 20px 5%;          
+    font-size: 0.95rem;
+    border-top: 1px solid #c5b0a3;
+    
+    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+}
+footer p {
+    margin: 0; 
+}
+footer p:first-child {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+footer p:last-child {
+    font-size: 0.9rem;
+    color: #5d4037; 
+}
+
 /*=================STRANICA SADRŽAJ===================*/
 
 .stranica-sadrzaj {
@@ -200,6 +224,9 @@ th, td {
 
 
 /*===============STRANICA INDEX===========*/
+html {
+    scroll-behavior: smooth; 
+}
 .hero {
     height: 80vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
@@ -268,8 +295,13 @@ th, td {
     display: flex;
     gap: 15px;
     justify-content: center;
+    align-items: flex-start;
 }
 .o-nama-slika img {
+    width: 100%;           
+    max-width: 280px;      
+    height: auto;          
+    object-fit: contain;
     border-radius: 10px; 
     box-shadow: 10px 10px 30px rgba(0,0,0,0.1); 
     transition: transform 0.3s ease;
@@ -315,6 +347,143 @@ th, td {
     font-size: 0.95rem;
     line-height: 1.6;
     color: #666; 
+}
+
+section.projekti {
+    display: flex;
+    gap: 30px; 
+    padding: 60px 5%;
+    background-color: #fdfaf5; 
+    align-items: flex-start; 
+}
+.kategorije { flex: 0 0 250px; }
+.lokacija { flex: 0 0 300px; }
+main.projekti { flex: 1; }
+.kategorije h3 {
+    color: #4b3832;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #eaddca;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.kategorije ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 35px;
+}
+.kategorije li {
+    padding: 12px 0;
+    color: #5d4037;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.kategorije li:hover {
+    color: #eaddca;
+    padding-left: 5px;
+}
+.video-sekcija h3 {
+    margin-top: 20px;
+}
+.video img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+.play-dugme {
+    display: block;
+    width: 100%;
+    background-color: #4b3832;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.play-dugme:hover {
+    background-color: #eaddca;
+    color: #4b3832;
+}
+main.projekti h2 {
+    color: #4b3832;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.projekti-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px;
+}
+.projekt-kartica {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    overflow: hidden;
+}
+.projekt-kartica img {
+    width: 100%;
+    height: 260px;     
+    object-fit: cover; 
+    display: block;
+}
+.projekt-kartica h4 {
+    color: #4b3832;
+    margin: 15px 0 5px 0;
+    font-size: 1.1rem;
+}
+.projekt-kartica p {
+    color: #777;
+    font-size: 0.9rem;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+.detalji-dugme {
+    display: inline-block;     
+    background-color: #eaddca; 
+    color: #4b3832;           
+    border: 1px solid #eaddca; 
+    padding: 6px 18px;        
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;         
+    letter-spacing: 1px;       
+    text-decoration: none;     
+    transition: 0.3s ease;     
+}
+.detalji-dugme:hover {
+    background-color: #4b3832; 
+    color: white;              
+    border-color: #4b3832;
+}
+.projekt-kartica button:hover {
+    background-color: #4b3832;
+    color: white;
+}
+.lokacija h3 {
+    color: #4b3832;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #eaddca;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.mapa-desno iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
 }
 
 /*===============STRANICA KONTAKT=========*/
