@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumina Interior Design | Početna</title>
-    <link rel="stylesheet" href="tptpstil.css">
+    <link rel="stylesheet" href="css/tptpstil.css">
 </head>
 
 <body>
@@ -53,11 +53,11 @@
              </p>
          </div>
       <div class="o-nama-slika">
-        <img src="images/o-nama1.jpg"  alt="Prvi detalj enteriera" style="width: 300px; height: auto;">
-        <img src="images/o-nama2.jpg"  alt="Drugi detalj enterijera" style="width: 300px; height: auto;"> 
-        <!--Ovaj naćin za smanjivanje slika sam pronašla uz pomoć ChatGPT-a.-->
-        <!--Razumijem da width:300px određuje da će slika biti široka 300 piskela-->
-        <!--height:auto; znači da će visina slike biti automatski prilagođena da bi se spriječilo iskrivljenje slike--> 
+        <picture>
+          <source srcset="images/o-nama1.webp" type="image/webp">
+          <img src="images/o-nama1.jpg" alt="Prvi detalj enterijera" style="width: 300px; height: auto;" >
+      </picture>
+        <img src="images/o-nama2.jpg"  alt="Drugi detalj enterijera" style="width: 300px; height: auto;" > 
       </div>
     </div>
  </section>
@@ -188,4 +188,7 @@
         <p>Članovi tima: Amina Imamović, Amina Ibrahimović i Amina Fazlić </p>
       <p>&copy; 2026 Lumina Design. Sva prava zadržana.</p>
     </footer>
+
+    <script src="js/tptpskripte.js"></script>
+
 </body>
