@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumina Interior Design | Projekat A101</title>
+    <link rel="icon" type="images/png" href="images/logo.png">
     <link rel="stylesheet" href="css/tptpstil.css">
 </head>
 
@@ -17,30 +18,37 @@
         <ul>
             <li><a href="index.html">POČETNA</a></li>
             <li><a href="index.html">O NAMA</a></li>
-            <li><a href="sadrzaj.html">USLUGE</a></li>
-            <li><a href="sadrzaj.html">PROJEKTI</a></li>
+            <li><a href="#kategorije1">USLUGE</a></li>
+            <li><a href="#specifikacije">PROJEKTI</a></li>
             <li><a href="kontakt.html">KONTAKT</a></li>
         </ul>
+
       </nav>
         <ul>
+            <!--'aria-label' je dodan na prijedlog AI-ja-->
             <li><button id="dark-mode-toggle" aria-label="Prebaci u tamni režim">🌙</button></li>
             <li><a href="https://github.com/AminaImamovic/Grupa12-TPTP-2026" target="_blank">GitHub</a></li>
          </ul>
     </header>
 
     <div class="stranica-sadrzaj">
-    <nav class="lijevo">
+
+    <!--Interni bookmark linkovi podešeni su uz pomoć AI-ja radi lakše navigacije. -->
+    <!--Razumije se da atribut 'href="#specifikacije"' traži element na stranici koji ima jedinstveni 'id="specifikacije"' i automatski skrola ekran do njega-->
+    <aside class="lijevo">
         <h3>Sadržaj stranice</h3>
+        <nav>
         <ul>
             <li><a href="#o-projektu">O projektu</a></li>
             <li><a href="#specifikacije">Specifikacije</a></li>
             <li><a href="#galerija">Galerija</a></li>
             <li><a href="#tlocrt">Tlocrt</a></li>
-            <li><a href="#kategorije">Kategorije</a></li>
+            <li><a href="#kategorije1">Kategorije</a></li>
             <li><a href="#cilj-projekta">Cilj projekta</a></li>
             <li><a href="#vrh">Skoči na vrh</a></li>
         </ul>
-    </nav>
+        </nav>
+    </aside>
 
     <main class="sredina">
     <article id="o-projektu">
@@ -100,9 +108,10 @@
         </table>
     </section>
 
-    <section id="galerija">
+    <div class="galerija-tlocrt">
+        <section id="galerija">
         <h3>GALERIJA</h3>
-        <div class="gallery">  
+        <div class="galerija">  
           <picture> 
             <source srcset="images/dnevni_boravak.webp" type="image/webp">
             <img src="images/dnevni_boravak.jpg" alt="Dnevni boravak">
@@ -117,20 +126,23 @@
 
     <section id="tlocrt">
         <h3>TLOCRT STANA</h3>
-        <img src="images/tlocrt.jpg" usemap="#stanmap" alt="Tlocrt stana A101">
+        <img src="images/tlocrt.jpg" usemap="#stanmap" alt="Tlocrt stana A101"> <!--Slika geenerisana putem AI-->
         
+        <!--Koordinate za Image Map određene su uz pomoć AI-ja-->
         <map name="stanmap">
-        <area shape="circle" coords="310,366,20" href="#specifikacije" alt="Dnevni boravak">
-        <area shape="circle" coords="560,286,20" href="#specifikacije" alt="Kuhinja">
-        <area shape="circle" coords="257,736,20" href="#specifikacije" alt="Spavaća soba">
-        <area shape="circle" coords="607,563,20" href="#specifikacije" alt="Kupatilo">
-        <area shape="circle" coords="425,586,20" href="#specifikacije" alt="Hodnik">
-        <area shape="circle" coords="640,756,20" href="#specifikacije" alt="Radna soba">
+            <area shape="circle" coords="120,100,25" href="#specifikacije" alt="Dnevni boravak">
+            <area shape="circle" coords="280,100,25" href="#specifikacije" alt="Kuhinja">
+            <area shape="circle" coords="100,300,25" href="#specifikacije" alt="Spavaća soba">
+            <area shape="circle" coords="300,200,25" href="#specifikacije" alt="Kupatilo">
+            <area shape="circle" coords="200,220,25" href="#specifikacije" alt="Hodnik">
+            <area shape="circle" coords="300,320,25" href="#specifikacije" alt="Radna soba">
         </map>
         <p>Kliknite na brojeve na tlocrtu za detalje o svakoj prostoriji.</p>
       </section>
+    </div>
 
-    <section id="kategorije">
+    <div class="kategorije1-cilj">
+    <section id="kategorije1">
     <h3>KATEGORIJE I USLUGE</h3>
     <ul>
         <li>Dizajn enterijera
@@ -157,30 +169,29 @@
     </ul>     
     </section>
 
-    <section id="cilj-projekta">
+    <section id="cilj-projekta" class="cilj-box">
+        
         <h3>O projektu</h3>
-        <p>Cilj projekta bio je stvoriti moderan, funkcionalan i prozračan prostor prilagođen potrebama klijenta. Kombinacijom prirodnih materijala, skrivenog osvjetljenja i neutralnih tonova postigli smo savršen balans estetike i udobnosti.</p>
-    </section>
+        <p>Cilj projekta bio je stvoriti moderan, funkcionalan i prozračan prostor koji u potpunosti odgovara svakodnevnim potrebama i životnom stilu klijenta. Pažljivom kombinacijom prirodnih materijala, poput drveta i kamena, ugrađenog skrivenog osvjetljenja i neutralnih tonova, postigli smo savršen balans visoke estetike i vrhunske udobnosti. Svaki kvadratni metar je maksimalno iskorišten kako bi se postigao osjećaj prostranosti, topline i bezvremenske elegancije.</p>
+        
+        <div class="lajk">
+        <button id="lajk-dugme">❤️</button>
+        <p>Broj lajkova: <strong id="broj-lajkova">0</strong></p>
+        </div>
+        
         <div class="vrh">
       <a href="#vrh" class="vrh-link">Skoči na vrh</a>
     </div>
+   
+    </section>
+    </div>
     </main>
-    <div class="desno">
-    <aside class="informacije">
-      <h3>DETALJI PROJEKTA</h3>
-      <ul>
-        <li><strong>ID:</strong> A101-2026</li>
-        <li><strong>Tip:</strong> Stambeni prostor</li>
-        <li><strong>Lokacija:</strong> Tuzla, Centar</li>
-        <li><strong>Vrijeme:</strong> 9 sedmica</li>
-      </ul>
-      <p><i>*Sve specifikacije su rađene prema zahtjevima klijenta.</i></p>
-    </aside>
-
-    </div>
     </div>
 
+    <!--Oznaka '©' je uz pomoć AI. -->
+    <!--Razumije se da oznaka '©' predstavlja kodiranu sintaksu koju pretraživač automatski prepoznaje i na ekranu ispisuje kao standardni znak za copyright ©.-->
     <footer>
+        <p>Članovi tima: Amina Imamović, Amina Ibrahimović i Amina Fazlić </p>
       <p>&copy; 2026 Lumina Design. Sva prava zadržana.</p>
     </footer>
 
