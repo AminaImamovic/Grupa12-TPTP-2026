@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumina Interior Design | Početna</title>
+    <link rel="icon" type="images/png" href="images/logo.png">
     <link rel="stylesheet" href="css/tptpstil.css">
 </head>
 
@@ -16,7 +17,7 @@
       <nav class="main-nav">
         <ul>
             <li><a href="index.html">POČETNA</a></li>
-            <li><a href="index.html">O NAMA</a></li>
+            <li><a href="#o_nama_sekcija">O NAMA</a></li>
             <li><a href="sadrzaj.html">USLUGE</a></li>
             <li><a href="sadrzaj.html">PROJEKTI</a></li>
             <li><a href="kontakt.html">KONTAKT</a></li>
@@ -28,7 +29,7 @@
          </ul>
     </header>
 
- <section class="hero">
+ <section class="hero animiraj-me">
     <div class="hero-sadrzaj">
         <h1>Dizajniramo prostor koji inspiriše</h1>
 
@@ -38,7 +39,7 @@
     </div>
  </section>
 
- <section class="o-nama">
+ <section id="o_nama_sekcija" class="o-nama animiraj-me">
     <div class="o-nama-okvir">
         <div class="o-nama-tekst">
           <h2>O nama</h2>
@@ -62,7 +63,7 @@
     </div>
  </section>
 
- <section class="proces-rada">
+ <section class="proces-rada animiraj-me">
     <h2>U tri jednostavna koraka</h2>
      <div class="proces-okvir">
         <div class="faza-rada">
@@ -90,14 +91,14 @@
 
  <section class="projekti" id="naši_projekti">
 
-    <aside class="kategorije">
+    <aside class="kategorije animiraj-me">
         <h3>KATEGORIJE</h3>
         <ul>
-            <li>Sve</li>
-            <li>Stanovi</li>
-            <li>Kuće</li>
-            <li>Kancelarije</li>
-            <li>Komercijalni prostori</li>
+            <li data-filter="Sve">Sve</li>
+            <li data-filter="Stanovi">Stanovi</li>
+            <li data-filter="Kuće">Kuće</li>
+            <li data-filter="Kancelarije">Kancelarije</li>
+            <li data-filter="Komercijalni prostori">Komercijalni prostori</li>
         </ul>
 
         <div class="video-sekcija">
@@ -115,42 +116,42 @@
         
         <div class="projekti-grid">
             
-            <div class="projekt-kartica">
+            <div class="projekt-kartica" data-category="Stanovi">
                 <img src="images/moderan_stan.jpg" alt="Moderan stan" loading="lazy">
                 <h4>Moderan stan</h4>
                 <p>Toplina doma u svakom detalju.</p>
                 <a href="sadrzaj.html" class="detalji-dugme">Detalji</a>
             </div>
 
-            <div class="projekt-kartica">
+            <div class="projekt-kartica" data-category="Kuće">
                 <img src="images/kuhinja1.jpg" alt="Kuhinja" loading="lazy">
                 <h4>Kuhinja</h4>
                 <p>Funkcionalnost i elegancija u savršenom spoju.</p>
                 <a href="sadrzaj.html" class="detalji-dugme">Detalji</a>
             </div>
 
-            <div class="projekt-kartica">
+            <div class="projekt-kartica" data-category="Kuće">
                 <img src="images/spavaca_soba1.jpg" alt="Spavaća soba" loading="lazy">
                 <h4>Spavaća soba</h4>
                 <p>Prostor za odmor i potpuni mir.</p>
                 <a href="sadrzaj.html" class="detalji-dugme">Detalji</a>
             </div>
 
-            <div class="projekt-kartica">
+            <div class="projekt-kartica" data-category="Kuće">
                 <img src="images/kupatilo1.jpg" alt="Kupatilo" loading="lazy">
                 <h4>Kupatilo</h4>
                 <p>Moderno, minimalističko i praktično.</p>
                 <a href="sadrzaj.html" class="detalji-dugme">Detalji</a>
             </div>
 
-            <div class="projekt-kartica">
+            <div class="projekt-kartica" data-category="Kancelarije">
                 <img src="images/kancelarija.jpg" alt="Kancelarija" loading="lazy">
                 <h4>Kancelarija</h4>
                 <p>Produktivan prostor dizajniran za usojeh.</p>
                 <a href="sadrzaj.html" class="detalji-dugme">Detalji</a>
             </div>
 
-            <div class="projekt-kartica">
+            <div class="projekt-kartica" data-category="Komercijalni prostori">
                 <img src="images/restoran.jpg" alt="Restoran" loading="lazy">
                 <h4>Restoran</h4>
                 <p>Ambijent koji ostavlja utisak.</p>
