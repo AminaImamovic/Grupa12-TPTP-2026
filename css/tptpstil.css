@@ -686,7 +686,7 @@ main.projekti h2 {
 }
 .projekti-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(3, 1fr); 
     gap: 25px;
 }
 .projekt-kartica {
@@ -1265,7 +1265,9 @@ body.dark-mode .dugme button[type="reset"] {
         margin: 0;
         list-style: none;
     }
-
+    .projekti-grid {
+        grid-template-columns: 1fr; 
+    }
     .galerija { 
         grid-template-columns: 1fr;
         justify-items: center;
