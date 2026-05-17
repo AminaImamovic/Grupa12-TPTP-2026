@@ -14,3 +14,12 @@ Aplikacija je izrađena koristeći HTML, CSS i JavaScript, bez korištenja dodat
 * **Amina Imamović** - *GitHub username: AminaImamovic * 
 * **Amina Ibrahimović** - *GitHub username: aminaibrahimovic * 
 * **Amina Fazlić** - *GitHub username: aminafazlic20  * 
+
+##  Podjela rada
+
+* **Amina Imamovic** - izrada index.html stranice i odgovarajuceg dijela koda za datu stranicu u CSS-u i JS-u
+* **Amina Ibrahimovic** - izrada sadrzaj.html stranice i odgovarajuceg dijela koda za datu stranicu u CSS-u i JS-u
+* **Amina Fazlic** - izrada kontakt.html stranice i odgovarajuceg dijela koda za datu stranicu u CSS-u i JS-u
+
+##  Screenshot naslovne stranice
+[![Slika nase pocetne stranice](images/pocetna_stranica.jpg)](https://github.com/AminaImamovic/Grupa12-TPTP-2026)
