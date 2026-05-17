@@ -106,3 +106,85 @@ filterStavke.forEach(stavka => {
         });
     });
 });
+
+//======KONTAKT STRANICA=========//
+
+document.addEventListener("DOMContentLoaded", function() {
+    const kontaktForma = document.getElementById("kontakt-forma");
+
+    if (kontaktForma) {
+        kontaktForma.addEventListener("submit", function(dogadjaj) {
+            
+            dogadjaj.preventDefault(); 
+
+            document.getElementById("greska-ime").textContent = "";
+            document.getElementById("greska-prezime").textContent = "";
+            document.getElementById("greska-email").textContent = "";
+            document.getElementById("greska-telefon").textContent = "";
+            document.getElementById("greska-menu").textContent = "";
+            document.getElementById("greska-poruka").textContent = "";
+
+            let formaValidna = true;
+
+            const ime = document.getElementById("ime").value.trim();
+            const prezime = document.getElementById("prezime").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const telefon = document.getElementById("telefon").value.trim();
+            const upit = document.getElementById("upit-o").value;
+            const poruka = document.getElementById("poruka").value.trim();
+
+        const slovaRegex = /^[a-zA-ZčćžšđČĆŽŠĐ\s-]+$/;
+
+      if (ime === "") {
+    document.getElementById("greska-ime").textContent = "Molimo Vas unesite svoje ime.";
+    formaValidna = false;
+        } else if (!slovaRegex.test(ime)) {
+    document.getElementById("greska-ime").textContent = "Ime može sadržavati samo slova.";
+    formaValidna = false;
+    }
+      if (prezime === "") {
+    document.getElementById("greska-prezime").textContent = "Molimo Vas unesite svoje prezime.";
+    formaValidna = false;
+        } else if (!slovaRegex.test(prezime)) {
+    document.getElementById("greska-prezime").textContent = "Prezime može sadržavati samo slova.";
+    formaValidna = false;
+        }
+      if ( upit === "") {
+    document.getElementById("greska-menu").textContent = "Molimo Vas odaberite jednu od opciju iz menija.";
+    formaValidna = false;
+}
+
+            //Regex validacija urađena uz pomoć AI alata Gemini.//
+        
+
+        const telefonRegex = /^[0-9+\s-]+$/; //Razumijem da ovo znaci da se u polje za telefon smiju upisati samo brojevi 0-9, razmaci, + i -//
+            if (telefon === "") {
+                document.getElementById("greska-telefon").textContent = "Broj telefona je obavezan.";
+                formaValidna = false;
+            } else if (!telefonRegex.test(telefon)) {
+                    document.getElementById("greska-telefon").textContent = "Unesite ispravan broj (samo brojevi, + ili -).";
+                   formaValidna = false;
+                }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //Razumijem da ovo znaci da se provjerava ispravnost formata e-maila (tekst prije i poslije @ i domenu npr. .com)//
+            if (email === "" || !emailRegex.test(email)) {
+                document.getElementById("greska-email").textContent = "Unesite ispravan format email adrese (npr. ime@ispravno.com).";
+                formaValidna = false;
+        } else if (!emailRegex.test(email)) {
+                document.getElementById("greska-email").textContent = "Unesite ispravan format email adrese (npr. ime@ispravno.com).";
+                formaValidna = false;
+            }
+
+      if (poruka === "") {
+         document.getElementById("greska-poruka").textContent = "Niste unijeli tekst Vaše poruke.";
+         formaValidna = false;
+            }
+
+       if (formaValidna) {
+         alert("Hvala Vam! Vaša poruka je uspješno poslana!");
+         kontaktForma.reset(); 
+         }
+
+        });
+    }
+});
