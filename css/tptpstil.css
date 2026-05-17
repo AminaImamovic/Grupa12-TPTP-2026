@@ -862,7 +862,7 @@ figure img {
 .polje textarea:focus {
     outline: none;
     border-color: var(--glavna-boja);
-    box-shadow: 0 0 0 3px rgba(139, 110, 75, 0.15); /* Blago zlatno isijavanje */
+    box-shadow: 0 0 0 3px rgba(139, 110, 75, 0.15);
 }
 
 /* Poruke o greškama */
@@ -872,7 +872,7 @@ figure img {
     margin-top: 6px;
     font-weight: 500;
     display: block;
-    min-height: 18px; /* Rezerviše prostor da forma ne "skače" kad iskoči greška */
+    min-height: 18px;
 }
 
 /* Dugmad submit i reset */
@@ -922,7 +922,7 @@ figure img {
 
 /* Tamni režim */
 body.dark-mode #kontakt-forma {
-    background-color: #22201e;
+    background-color: #4e4a46;
     border-color: #444444;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }

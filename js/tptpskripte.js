@@ -118,23 +118,45 @@ document.addEventListener("DOMContentLoaded", function() {
             dogadjaj.preventDefault(); 
 
             document.getElementById("greska-ime").textContent = "";
+            document.getElementById("greska-prezime").textContent = "";
             document.getElementById("greska-email").textContent = "";
             document.getElementById("greska-telefon").textContent = "";
+            document.getElementById("greska-menu").textContent = "";
             document.getElementById("greska-poruka").textContent = "";
 
             let formaValidna = true;
 
             const ime = document.getElementById("ime").value.trim();
+            const prezime = document.getElementById("prezime").value.trim();
             const email = document.getElementById("email").value.trim();
             const telefon = document.getElementById("telefon").value.trim();
+            const upit = document.getElementById("upit-o").value;
             const poruka = document.getElementById("poruka").value.trim();
 
-      if (ime === "") {
-         document.getElementById("greska-ime").textContent = "Molimo Vas unesite svoje ime.";
-         formaValidna = false;
-         }
+        const slovaRegex = /^[a-zA-ZčćžšđČĆŽŠĐ\s-]+$/;
 
-            //Validacija broja telefona i e-mail urađena pomoću AI alata Gemini.//
+      if (ime === "") {
+    document.getElementById("greska-ime").textContent = "Molimo Vas unesite svoje ime.";
+    formaValidna = false;
+        } else if (!slovaRegex.test(ime)) {
+    document.getElementById("greska-ime").textContent = "Ime može sadržavati samo slova.";
+    formaValidna = false;
+    }
+      if (prezime === "") {
+    document.getElementById("greska-prezime").textContent = "Molimo Vas unesite svoje prezime.";
+    formaValidna = false;
+        } else if (!slovaRegex.test(prezime)) {
+    document.getElementById("greska-prezime").textContent = "Prezime može sadržavati samo slova.";
+    formaValidna = false;
+        }
+      if ( upit === "") {
+    document.getElementById("greska-menu").textContent = "Molimo Vas odaberite jednu od opciju iz menija.";
+    formaValidna = false;
+}
+
+            //Regex validacija urađena uz pomoć AI alata Gemini.//
+        
+
         const telefonRegex = /^[0-9+\s-]+$/; //Razumijem da ovo znaci da se u polje za telefon smiju upisati samo brojevi 0-9, razmaci, + i -//
             if (telefon === "") {
                 document.getElementById("greska-telefon").textContent = "Broj telefona je obavezan.";

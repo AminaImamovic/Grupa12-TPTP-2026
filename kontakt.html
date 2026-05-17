@@ -45,47 +45,48 @@
       </figure>
 
       <section> <!--IME-->
-       <form id="kontakt-forma">
+       <form id="kontakt-forma" novalidate>
+
         <div class="polje">
         <label for="ime">Ime:</label>
-        <input type="text" id="ime" name="ime" required>
-        <span class="greška" id="ime-greska"></span>
+        <input type="text" id="ime" name="ime">
+        <span class="greška" id="greska-ime"></span>
         </div>
 
              <!--PREZIME-->
         <div class="polje">
         <label for="prezime">Prezime:</label>
-        <input type="text" id="prezime" name="prezime" required>
-        <span class="greška" id="prezime-greska"></span>
+        <input type="text" id="prezime" name="prezime">
+        <span class="greška" id="greska-prezime"></span>
         </div>
             <!--BR TEL-->
         <div class="polje">
         <label for="telefon">Telefon:</label>
         <input type="text" id="telefon" name="telefon">
-        <span class="greška" id="telefon-greska"></span>
+        <span class="greška" id="greska-telefon"></span>
         </div>
                 <!--E-MAIL-->
         <div class="polje">
-        <label for="e-mail">E-mail:</label>
-        <input type="email" id="e-mail" name="e-mail" required>
-        <span class="greška" id="e-mail-greska"></span>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+        <span class="greška" id="greska-email"></span>
         </div>
               <!--MENU-->
         <div class="polje">
         <label for="upit-o">Upit o:</label>
-        <select id="upit-o" name="upit-o" required>
+        <select id="upit-o" name="upit-o">
          <option value="">Odaberite opciju</option>
          <option value="usluge">Vrste i cijene usluga</option>
          <option value="konsultacije">Besplatne konsultacije</option>
          <option value="san">Uređenje Vašeg doma</option>
         </select>
-        <span class="greška" id="menu-greska"></span>
+        <span class="greška" id="greska-menu"></span>
         </div>
           <!--PORUKA KORISNIKA-->
         <div class="polje">
         <label for="poruka">Vaša poruka:</label>
-        <textarea id="poruka" name="poruka" required rows="8"></textarea>
-        <span class="greška" id="poruka-greska"></span>
+        <textarea id="poruka" name="poruka" rows="8"></textarea>
+        <span class="greška" id="greska-poruka"></span>
         </div>
         <!--DUGMAD-->
         <div class="dugme">
@@ -99,3 +100,6 @@
        <p>Članovi tima: Amina Imamović, Amina Ibrahimović i Amina Fazlić </p>
       <p>&copy; 2026 Lumina Interior Design.<br>Sva prava zadržana.</p></footer>
   </main>
+<script src="js/tptpskripte.js"></script>
+</body>
+</html>
