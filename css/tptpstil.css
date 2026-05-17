@@ -445,6 +445,64 @@ aside.lijevo a:hover {
 
 
 /*===============STRANICA INDEX===========*/
+/* Tamni režim */
+body.dark-mode {
+    background-color: #22201e;
+    color: #ffffff;
+}
+body.dark-mode .o-nama, 
+body.dark-mode .proces-rada,
+body.dark-mode section.projekti {
+    background-color: #22201e;
+    color: #ffffff;
+}
+body.dark-mode .o-nama-tekst p {
+    color: #eaddca;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+body.dark-mode header {
+    background-color: #1a1917;
+    border-bottom: 1px solid #383532;
+}
+body.dark-mode .main-nav ul li a {
+    color: #ffffff;
+}
+body.dark-mode .faza-rada {
+    background-color: #a19c98; 
+}
+body.dark-mode .faza-rada p {
+    color: #ffffff;
+}
+body.dark-mode .projekti-grid .projekt-kartica {
+    background-color: #2e2b29;
+    border: 1px solid #383532;
+}
+body.dark-mode section.projekti h2,
+body.dark-mode aside.kategorije h3,
+body.dark-mode aside.lokacija h3 {
+    color: #f0edea;
+}
+body.dark-mode .projekt-kartica h4 {
+    color: #f0edea; 
+}
+body.dark-mode .projekt-kartica p {
+    color: #eaddca; 
+}
+body.dark-mode aside.kategorije,
+body.dark-mode aside.lokacija {
+    background-color:  #22201e;
+    color: #f0edea;
+}
+body.dark-mode aside.kategorije ul li,
+body.dark-mode .kontakt-info p {
+    color: #f0edea;
+}
+body.dark-mode footer {
+    background-color: #161514;
+    color: #a19c98;
+}
+
 html {
     scroll-behavior: smooth; 
 }
@@ -707,6 +765,15 @@ main.projekti h2 {
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
 }
 
+.animiraj-me {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animiraj-me.prikazi {
+    opacity: 1;
+    transform: translateY(0);
+}
 /*===============STRANICA KONTAKT=========*/
 /* Stil naslova */
 .kontakt-naslov {

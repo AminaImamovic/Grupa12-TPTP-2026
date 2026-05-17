@@ -65,3 +65,44 @@ bookmarkLinkovi.forEach(link => {
     });
 });
 });
+
+// STRANICA INDEX //
+const posmatrac = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('prikazi'); 
+            posmatrac.unobserve(entry.target); 
+        }
+    });
+}, {
+    threshold: 0.15 
+});
+
+
+document.querySelectorAll('.animiraj-me').forEach(element => {
+    posmatrac.observe(element);
+});
+
+const filterStavke = document.querySelectorAll('aside.kategorije ul li');
+const projekatKartice = document.querySelectorAll('.projekt-kartica');
+
+filterStavke.forEach(stavka => {
+    stavka.addEventListener('click', function() {
+        const odabranaKategorija = this.getAttribute('data-filter').trim().toLowerCase();
+
+        projekatKartice.forEach(kartica => {
+            const kategorijaAtribut = kartica.getAttribute('data-category');
+            
+            // Sigurnosna provjera: ako neka kartica nema data-category, preskoči je da ne pukne kod//
+            if (!kategorijaAtribut) return; 
+
+            const kategorijaKartice = kategorijaAtribut.trim().toLowerCase();
+
+            if (odabranaKategorija === 'sve' || odabranaKategorija === kategorijaKartice) {
+                kartica.style.display = ''; 
+            } else {
+                kartica.style.display = 'none'; 
+            }
+        });
+    });
+});
