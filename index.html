@@ -18,13 +18,14 @@
         <ul>
             <li><a href="index.html">POČETNA</a></li>
             <li><a href="#o_nama_sekcija">O NAMA</a></li>
-            <li><a href="sadrzaj.html">USLUGE</a></li>
             <li><a href="sadrzaj.html">PROJEKTI</a></li>
+            <li><a href="sadrzaj.html">USLUGE</a></li>
             <li><a href="kontakt.html">KONTAKT</a></li>
         </ul>
       </nav>
         <ul>
             <li><button id="dark-mode-toggle">🌙</button></li>
+            <!--Pomoću gemini-a ubacili sličicu-->
             <li><a href="https://github.com/AminaImamovic/Grupa12-TPTP-2026" target="_blank">GitHub</a></li>
          </ul>
     </header>
@@ -40,6 +41,7 @@
  </section>
 
  <section id="o_nama_sekcija" class="o-nama animiraj-me">
+
     <div class="o-nama-okvir">
         <div class="o-nama-tekst">
           <h2>O nama</h2>
@@ -64,6 +66,7 @@
  </section>
 
  <section class="proces-rada animiraj-me">
+    <!--za animaciju pomogao je gemini-->
     <h2>U tri jednostavna koraka</h2>
      <div class="proces-okvir">
         <div class="faza-rada">
@@ -103,11 +106,17 @@
 
         <div class="video-sekcija">
     <h3>INSPIRACIJA</h3>
-    <div class="video">
-        <img src="images/video.jpg" alt="Video inspiracija" loading="lazy">
-          <!--width="100%" nam govori da se slika raširi tačno koliko je širok aside-->
-        <button type="button" class="play-dugme">PLAY VIDEO</button>
-    </div>
+    <p>Pogledajte video koji nas inspiriše pri dizajniranju modernih prostora.</p>
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/vXhERzyihWU?si=TfqiW7KKhWlor4X4"
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+    <!--gemini pojasnio da radim preko live servera zbog dodatnih sigurnosnih pravila youtube-a-->
 </div>
     </aside>
 
